@@ -20,9 +20,12 @@
     </header>
 
     <div class="h-auto my-10">
-        <div style="background-image: url(static/realmonte.jpg); background-size: cover" class="h-[500px] align-middle  flex flex-col md justify-center items-center shadow-2xl gap-10 px-5">
+        <div style="background-image: url(static/realmonte.jpg); background-size: cover" class="h-[500px] align-middle  flex flex-col md justify-center items-center shadow-2xl gap-10 -mt-10">
             <img style="margin-top: 60px; width: 500px; object-fit: scale-down;" src="/static/PHOTO-2024-01-24-14-39-42.png" class="h-52">
-            <p class="text-white font-boh text-xl p-8 text-center">Concediti un soggiorno di relax presso la nostra struttura</p>
+           <div class="">
+            <p class="text-white font-boh text-xl text-center">Concediti un soggiorno di relax presso la nostra struttura</p>
+            <a><p class="text-white font-quick text-xl text-center text underline cursor-move text-yellow-400">scopri come avere il noleggio veiocolo gratutito</p></a>
+           </div>
            <div class="flex md:flex-row flex-col gap-5 md:gap-10 ">
             <a href="#prenota"><button class="bg-yellow-300 rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0grXAFRcE6s8ZQJXMiY6DkTMY5bGZFHjmXaL6rU4cdmScdBQY8FLupZraxzuuDNtil&id=100091338414206&sfnsn=scwspwa"> <button class="bg-cyan-200 rounded-full font-quick text-sky-700 p-3 px-6" >Pagina Facebook</button></a>
@@ -41,26 +44,11 @@
        <h2 class="font-quick text-2xl "> Cosa offriamo </h2>
        
         <div class="flex flex-col justify-center items-center p-10 ">
-
-            <div style="background-color: rgb(255, 255, 255);" class="items-center justify-center h-auto flex flex-col  gap-10 md:flex-row p-14 rounded-2xl">
-                <div class="">
-                    <h2 style="padding-bottom: 20px;" class="text-yellow-600 font-borel text-2xl">Noleggio Omaggio!</h2>
-                    <div style="width: 300px; padding-bottom: 20px;" class="font-quick">
-                        Solo fino ad al 31 marzo, con almeno tre pernottamenti, 
-                        per un giorno riceverai 
-                        in omaggio il noleggio di due 
-                        e-bike o di uno scooter
-                    </div>
-                    <a class="pt-10" href="#prenota"><button class="bg-yellow-300  rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
-                </div>
-                <img style="width: 400px;" src="static/bici.png">
-            </div>
-
             <div class="flex md:gap-3 md:flex-row gap-4 flex-col justify-center items-start px-5 mb-10 -pt-10 ">
 
                
             
-                <div class="flex flex-col md:flex-row justify-center align-middle">
+                <div class="flex flex-col md:flex-row justify-center align-middle gap-10">
 
                     <div class="flex flex-col justify-center items-start gap-4">
                         <div class="flex justify-center items-center gap-4 ">
@@ -113,7 +101,23 @@
     
                 
            
-            
+            <div style="background-color: rgb(255, 255, 255);" class="items-center justify-center h-auto flex flex-col  gap-10 md:flex-row p-14 rounded-2xl">
+                <div class="">
+                    <h2 style="padding-bottom: 20px;" class="text-yellow-600 font-borel text-2xl">Noleggio Omaggio!</h2>
+                    <div style="width: 300px; padding-bottom: 20px;" class="font-quick">
+                        Solo fino al 30 aprile, con almeno tre pernottamenti, 
+                        per un giorno riceverai 
+                        in omaggio il noleggio di due 
+                        e-bike o di uno scooter
+                    </div>
+                    <div class="flex align-middle items-center gap-8">
+                        <a class="pt-10" href="#prenota"><button class="bg-yellow-300  rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
+                        <a href="#domande" class="font-quick mt-10 text-cyan-600">Dubbi?</a>
+                    </div>
+                    
+                </div>
+                <img class="w-44" src="static/bici.png">
+            </div>
 
                 
             </div>
@@ -156,17 +160,11 @@
        </div>  
     </section>
 
-    <section style="background-image: url(static/summer.png);" class="flex flex-col gap-  text-center items-center justify-center p-10 h-96 bg-cyan-50">
-       <div class=" flex flex-col gap-8 w-96 justify-center items-center">
-        <h2 class="font-quick text-sky-900 text-2xl">Attività</h2>
-        <p2 class="">Offriamo un ampia serie di attività con struttre convenzionate. Contattaci per saperne di più</p2>
-        <button class="p-4 rounded-full bg-yellow-300 shadow-lg w-52 text-black">contattaci</button>
-       </div>
-    </section>
+   
 
 
     <footer class=" flex flex-col bg-sky-950 h-auto justify-center items-center gap-20">
-       <div class="flex gap-10 md:flex-row flex-col p-10">
+       <div class="flex rounded-2xl gap-10 md:flex-row flex-col p-10">
         <div class="">
             <h1 class=" text-3xl font-PlayFair font-bold py-5 text-white">
                 Essegi-Home
