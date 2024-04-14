@@ -10,11 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Borel&family=Caprasimo&family=Playfair+Display+SC:wght@700&family=Quicksand:wght@500&family=Sacramento&family=Vidaloka&display=swap" rel="stylesheet">
 </head>
-<body class="flex flex-col scroll-smooth">
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlV_MK63B1SqT9g22FXi61kyMzdNgVVRY&libraries=places&callback=initMap&v=weekly&keyword=Grocery"
-      defer
-    ></script>
+<body class="flex flex-col scroll-smooth overflow-hidden">
+    
     <header class="flex bg-sky-950 justify-around">
         <h1 class="bg-sky-950 text-3xl font-PlayFair font-bold p-5 text-white">
         Essegi-Home
@@ -40,13 +37,13 @@
 
 
 
-    <div class="flex flex-col  md:gap-5 justify-center px-10 bg-sky-50 items-center pt-10">
+    <div class="flex flex-col  md:gap-5 justify-center px-10 bg-sky-50 items-center pt-10 overflow-hidden">
 
        <h2 class="font-quick text-2xl "> Cosa offriamo </h2>
        
-        <div class="flex flex-col justify-center items-center p-10 ">
-            <div class="flex md:gap-3 md:flex-row gap-4 flex-col justify-center items-start px-5 mb-10 -pt-10 ">        
-                <div class="flex flex-col md:flex-row justify-center items-center align-middle md:gap-0 gap-5 px-20 ">
+        <div class="flex flex-col justify-center items-center p-10 overflow-hidden w-full">
+            <div class="w-full flex md:gap-3 md:flex-row gap-4 flex-col justify-center items-start px-5 mb-10 -pt-10 ">        
+                <div class="flex flex-col md:flex-row justify-center items-center align-middle md:gap-0 gap-5 px-20 overflow-hidden w-full">
                     
                     <div class="flex-col md:flex-row">
                         <div class="flex flex-col justify-center items-start gap-4">
@@ -86,13 +83,14 @@
 
                     </div>
 
-                    <div class="flex snap-mandatory w-full  gap-14 overflow-x-scroll rounded-2xl snap-x ">
+                    <div class="flex snap-mandatory  gap-14 overflow-x-scroll rounded-2xl snap-x ">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/3.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/2.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/4.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/7.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/8.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/9.jpg" alt="">
+
                     </div>
                 </div>
             </div>
