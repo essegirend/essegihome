@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Borel&family=Caprasimo&family=Playfair+Display+SC:wght@700&family=Quicksand:wght@500&family=Sacramento&family=Vidaloka&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col scroll-smooth">
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlV_MK63B1SqT9g22FXi61kyMzdNgVVRY&libraries=places&callback=initMap&v=weekly&keyword=Grocery"
+      defer
+    ></script>
     <header class="flex bg-sky-950 justify-around">
         <h1 class="bg-sky-950 text-3xl font-PlayFair font-bold p-5 text-white">
         Essegi-Home
@@ -20,166 +23,153 @@
     </header>
 
     <div class="h-auto my-10">
-        <div style="background-image: url(static/realmonte.jpg); background-size: cover" class="h-[500px] align-middle  flex flex-col md justify-center items-center shadow-2xl gap-10 -mt-10">
-            <img style="margin-top: 60px; width: 500px; object-fit: scale-down;" src="/static/PHOTO-2024-01-24-14-39-42.png" class="h-52">
+        <div style="background-image: url(static/realmonte.jpg); background-size: cover" class="h-[600px] align-middle  flex flex-col md justify-center align-middle items-center shadow-2xl gap-10 -mt-10">
+            <img style=" width: 500px; object-fit: scale-down;" src="/static/PHOTO-2024-01-24-14-39-42.png" class="h-52 md:mt-10">
            <div class="">
-            <p class="text-white font-boh text-xl text-center">Concediti un soggiorno di relax presso la nostra struttura</p>
+            <p class="text-white font-boh text-xl text-center px-10 md:p-10">Concediti un soggiorno di relax presso la nostra struttura</p>
             <a><p class="text-white font-quick text-xl text-center text underline cursor-move text-yellow-400">scopri come avere il noleggio veiocolo gratutito</p></a>
            </div>
-           <div class="flex md:flex-row flex-col gap-5 md:gap-10 ">
+           <div class="flex md:flex-row flex-col items-center gap-5 md:gap-10 ">
             <a href="#prenota"><button class="bg-yellow-300 rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0grXAFRcE6s8ZQJXMiY6DkTMY5bGZFHjmXaL6rU4cdmScdBQY8FLupZraxzuuDNtil&id=100091338414206&sfnsn=scwspwa"> <button class="bg-cyan-200 rounded-full font-quick text-sky-700 p-3 px-6" >Pagina Facebook</button></a>
            </div>
            <div class="h-10">
-
            </div>
         </div>
     </div>
 
-   
 
-    
+
     <div class="flex flex-col  md:gap-5 justify-center px-10 bg-sky-50 items-center pt-10">
 
        <h2 class="font-quick text-2xl "> Cosa offriamo </h2>
        
         <div class="flex flex-col justify-center items-center p-10 ">
-            <div class="flex md:gap-3 md:flex-row gap-4 flex-col justify-center items-start px-5 mb-10 -pt-10 ">
-
-               
-            
-                <div class="flex flex-col md:flex-row justify-center align-middle gap-10">
-
-                    <div class="flex flex-col justify-center items-start gap-4">
-                        <div class="flex justify-center items-center gap-4 ">
-                            <svg class="h-10 -mt-2"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0002 19C11.4479 19 11.0002 19.4477 11.0002 20C11.0002 20.5523 11.4479 21 12.0002 21V19ZM12.0102 21C12.5625 21 13.0102 20.5523 13.0102 20C13.0102 19.4477 12.5625 19 12.0102 19V21ZM14.6907 17.04C15.0993 17.4116 15.7317 17.3817 16.1033 16.9732C16.475 16.5646 16.445 15.9322 16.0365 15.5605L14.6907 17.04ZM18.0541 13.3403C18.4626 13.7119 19.0951 13.682 19.4667 13.2734C19.8384 12.8649 19.8084 12.2324 19.3999 11.8608L18.0541 13.3403ZM7.96394 15.5605C7.55539 15.9322 7.52546 16.5646 7.89708 16.9732C8.26871 17.3817 8.90117 17.4116 9.30971 17.04L7.96394 15.5605ZM4.60055 11.8608C4.192 12.2324 4.16207 12.8649 4.53369 13.2734C4.90532 13.682 5.53778 13.7119 5.94633 13.3403L4.60055 11.8608ZM12.0002 21H12.0102V19H12.0002V21ZM12.0002 16C13.0369 16 13.9795 16.3931 14.6907 17.04L16.0365 15.5605C14.9715 14.5918 13.5538 14 12.0002 14V16ZM12.0002 11C14.3321 11 16.4548 11.8855 18.0541 13.3403L19.3999 11.8608C17.4468 10.0842 14.8489 9 12.0002 9V11ZM9.30971 17.04C10.0209 16.3931 10.9635 16 12.0002 16V14C10.4466 14 9.02893 14.5918 7.96394 15.5605L9.30971 17.04ZM5.94633 13.3403C7.54565 11.8855 9.66836 11 12.0002 11V9C9.15148 9 6.55365 10.0842 4.60055 11.8608L5.94633 13.3403Z" fill="#000000"></path> </g></svg>
-                            <h2 class= "text-yellow-600 font-borel">Wi-Fi</h2>
-                        </div>
-            
-                        <div class="flex justify-center items-center gap-4 ">
-                        <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7639 7C16.3132 6.38625 17.1115 6 18 6C19.6569 6 21 7.34315 21 9C21 10.6569 19.6569 12 18 12H3M8.50926 4.66667C8.87548 4.2575 9.40767 4 10 4C11.1046 4 12 4.89543 12 6C12 7.10457 11.1046 8 10 8H3M11.5093 19.3333C11.8755 19.7425 12.4077 20 13 20C14.1046 20 15 19.1046 15 18C15 16.8954 14.1046 16 13 16H3" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                        <h2 class="text-yellow-600 font-borel">climatizzazione</h2>
-                        </div>
+            <div class="flex md:gap-3 md:flex-row gap-4 flex-col justify-center items-start px-5 mb-10 -pt-10 ">        
+                <div class="flex flex-col md:flex-row justify-center items-center align-middle md:gap-0 gap-5 px-20 ">
                     
-                        <div class="flex justify-center items-center gap-4 ">                <svg class="h-10" fill="#000000" viewBox="0 0 24 24" id="wave" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M16.5,14a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,12a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,10a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,14Z" style="fill: #2ca9bc;"></path><path id="primary" d="M16.5,8a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,6,1,1,0,0,1,3,4,4,4,0,0,1,5.91,5.25a2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,4a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,8Zm2.91,10.75A2.12,2.12,0,0,1,21,18a1,1,0,0,0,0-2,4.06,4.06,0,0,0-2.92,1.25,2,2,0,0,1-3.17,0,4,4,0,0,0-5.83,0,2,2,0,0,1-3.17,0A4,4,0,0,0,3,16a1,1,0,0,0,0,2,2.1,2.1,0,0,1,1.58.75,4,4,0,0,0,5.83,0,2,2,0,0,1,3.17,0,4,4,0,0,0,5.83,0Z" style="fill: #000000;"></path></g></svg>
-                        <h2 class="text-yellow-600 font-borel">pochi minuti dal mare</h2>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col justify-center items-start gap-4">
-                        <div class="flex justify-center items-center gap-4 ">
-                            <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path d="M7 4V20M7 20L3 16M7 20L11 16M17 4V20M17 4L21 8M17 4L13 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                            <h2 class="text-yellow-600 font-borel">ampia quadratura</h2>
-                               </div>
-                    
+                    <div class="flex-col md:flex-row">
+                        <div class="flex flex-col justify-center items-start gap-4">
                             <div class="flex justify-center items-center gap-4 ">
-                            <svg class="h-10" viewBox="0 0 32 32" id="svg5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs2"></defs> <g id="layer1" transform="translate(-156,-340)"> <path d="m 169.5,357.01367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,357.01367 Z" id="path453523" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 169.5,351.51367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,351.51367 Z" id="path453515" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 168.07812,342.01562 a 1.0001,1.0001 0 0 0 -0.48437,0.084 l -9,4 a 1.0001,1.0001 0 0 0 -0.58398,1.05469 l 1,7 a 1.0001,1.0001 0 0 0 1.4375,0.7539 L 163,353.63281 v 15.38086 a 1.0001,1.0001 0 0 0 1,1 h 16 a 1.0001,1.0001 0 0 0 1,-1 v -15.38086 l 2.55273,1.27539 a 1.0001,1.0001 0 0 0 1.4375,-0.7539 l 1,-7 a 1.0001,1.0001 0 0 0 -0.58398,-1.05469 l -9,-4 A 1.0001,1.0001 0 0 0 175,343.01367 c 0,1.6687 -1.3313,3 -3,3 -1.6687,0 -3,-1.3313 -3,-3 a 1.0001,1.0001 0 0 0 -0.92188,-0.99805 z m -0.79101,2.40821 c 0.62208,2.05393 2.46313,3.58984 4.71289,3.58984 2.24976,0 4.09081,-1.53591 4.71289,-3.58984 l 7.18945,3.19531 -0.69726,4.87891 -2.75781,-1.37891 A 1.0001,1.0001 0 0 0 179,352.01367 v 16 h -14 v -16 a 1.0001,1.0001 0 0 0 -1.44727,-0.89453 l -2.75781,1.37891 -0.69726,-4.87891 z" id="path453497" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> </g> </g></svg>
-                            <h2 class="text-yellow-600 font-borel">lavatrice</h2>
+                                <svg class="h-10 -mt-2"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0002 19C11.4479 19 11.0002 19.4477 11.0002 20C11.0002 20.5523 11.4479 21 12.0002 21V19ZM12.0102 21C12.5625 21 13.0102 20.5523 13.0102 20C13.0102 19.4477 12.5625 19 12.0102 19V21ZM14.6907 17.04C15.0993 17.4116 15.7317 17.3817 16.1033 16.9732C16.475 16.5646 16.445 15.9322 16.0365 15.5605L14.6907 17.04ZM18.0541 13.3403C18.4626 13.7119 19.0951 13.682 19.4667 13.2734C19.8384 12.8649 19.8084 12.2324 19.3999 11.8608L18.0541 13.3403ZM7.96394 15.5605C7.55539 15.9322 7.52546 16.5646 7.89708 16.9732C8.26871 17.3817 8.90117 17.4116 9.30971 17.04L7.96394 15.5605ZM4.60055 11.8608C4.192 12.2324 4.16207 12.8649 4.53369 13.2734C4.90532 13.682 5.53778 13.7119 5.94633 13.3403L4.60055 11.8608ZM12.0002 21H12.0102V19H12.0002V21ZM12.0002 16C13.0369 16 13.9795 16.3931 14.6907 17.04L16.0365 15.5605C14.9715 14.5918 13.5538 14 12.0002 14V16ZM12.0002 11C14.3321 11 16.4548 11.8855 18.0541 13.3403L19.3999 11.8608C17.4468 10.0842 14.8489 9 12.0002 9V11ZM9.30971 17.04C10.0209 16.3931 10.9635 16 12.0002 16V14C10.4466 14 9.02893 14.5918 7.96394 15.5605L9.30971 17.04ZM5.94633 13.3403C7.54565 11.8855 9.66836 11 12.0002 11V9C9.15148 9 6.55365 10.0842 4.60055 11.8608L5.94633 13.3403Z" fill="#000000"></path> </g></svg>
+                                <h2 class= "text-yellow-600 font-borel">Wi-Fi</h2>
+                            </div>
+                
+                            <div class="flex justify-center items-center gap-4 ">
+                            <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7639 7C16.3132 6.38625 17.1115 6 18 6C19.6569 6 21 7.34315 21 9C21 10.6569 19.6569 12 18 12H3M8.50926 4.66667C8.87548 4.2575 9.40767 4 10 4C11.1046 4 12 4.89543 12 6C12 7.10457 11.1046 8 10 8H3M11.5093 19.3333C11.8755 19.7425 12.4077 20 13 20C14.1046 20 15 19.1046 15 18C15 16.8954 14.1046 16 13 16H3" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <h2 class="text-yellow-600 font-borel">Climatizzazione</h2>
+                            </div>
+                        
+                            <div class="flex justify-center items-center gap-4 ">                <svg class="h-10" fill="#000000" viewBox="0 0 24 24" id="wave" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M16.5,14a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,12a1,1,0,0,1,0-2,4,4,0,0,1,2.91,1.25,2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,10a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,14Z" style="fill: #2ca9bc;"></path><path id="primary" d="M16.5,8a4.06,4.06,0,0,1-2.92-1.25,2,2,0,0,0-3.17,0,4,4,0,0,1-5.83,0A2.1,2.1,0,0,0,3,6,1,1,0,0,1,3,4,4,4,0,0,1,5.91,5.25a2,2,0,0,0,3.17,0,4,4,0,0,1,5.83,0,2,2,0,0,0,3.17,0A4.06,4.06,0,0,1,21,4a1,1,0,0,1,0,2,2.12,2.12,0,0,0-1.59.75A4,4,0,0,1,16.5,8Zm2.91,10.75A2.12,2.12,0,0,1,21,18a1,1,0,0,0,0-2,4.06,4.06,0,0,0-2.92,1.25,2,2,0,0,1-3.17,0,4,4,0,0,0-5.83,0,2,2,0,0,1-3.17,0A4,4,0,0,0,3,16a1,1,0,0,0,0,2,2.1,2.1,0,0,1,1.58.75,4,4,0,0,0,5.83,0,2,2,0,0,1,3.17,0,4,4,0,0,0,5.83,0Z" style="fill: #000000;"></path></g></svg>
+                            <h2 class="text-yellow-600 font-borel">Pochi minuti dal mare</h2>
                             </div>
                         
                             <div class="flex justify-center items-center gap-4 ">
-                            <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                            <h2 class="text-yellow-600 font-borel">fino a 6 posti letto</h2>
-                           </div>
+                                <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path d="M7 4V20M7 20L3 16M7 20L11 16M17 4V20M17 4L21 8M17 4L13 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <h2 class="text-yellow-600 font-borel">Ampia quadratura</h2>
+                                   </div>
+                        
+                                <div class="flex justify-center items-center gap-4 ">
+                                <svg class="h-10" viewBox="0 0 32 32" id="svg5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs2"></defs> <g id="layer1" transform="translate(-156,-340)"> <path d="m 169.5,357.01367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,357.01367 Z" id="path453523" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 169.5,351.51367 a 1,1 0 0 0 -0.70703,0.29297 1,1 0 0 0 0,1.41406 l 5,5 a 1,1 0 0 0 1.41406,0 1,1 0 0 0 0,-1.41406 l -5,-5 A 1,1 0 0 0 169.5,351.51367 Z" id="path453515" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 168.07812,342.01562 a 1.0001,1.0001 0 0 0 -0.48437,0.084 l -9,4 a 1.0001,1.0001 0 0 0 -0.58398,1.05469 l 1,7 a 1.0001,1.0001 0 0 0 1.4375,0.7539 L 163,353.63281 v 15.38086 a 1.0001,1.0001 0 0 0 1,1 h 16 a 1.0001,1.0001 0 0 0 1,-1 v -15.38086 l 2.55273,1.27539 a 1.0001,1.0001 0 0 0 1.4375,-0.7539 l 1,-7 a 1.0001,1.0001 0 0 0 -0.58398,-1.05469 l -9,-4 A 1.0001,1.0001 0 0 0 175,343.01367 c 0,1.6687 -1.3313,3 -3,3 -1.6687,0 -3,-1.3313 -3,-3 a 1.0001,1.0001 0 0 0 -0.92188,-0.99805 z m -0.79101,2.40821 c 0.62208,2.05393 2.46313,3.58984 4.71289,3.58984 2.24976,0 4.09081,-1.53591 4.71289,-3.58984 l 7.18945,3.19531 -0.69726,4.87891 -2.75781,-1.37891 A 1.0001,1.0001 0 0 0 179,352.01367 v 16 h -14 v -16 a 1.0001,1.0001 0 0 0 -1.44727,-0.89453 l -2.75781,1.37891 -0.69726,-4.87891 z" id="path453497" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> </g> </g></svg>
+                                <h2 class="text-yellow-600 font-borel">Lavatrice</h2>
+                                </div>
+                            
+                                <div class="flex justify-center items-center gap-4 ">
+                                <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 5V19M3 16H21M21 19V13.2C21 12.0799 21 11.5198 20.782 11.092C20.5903 10.7157 20.2843 10.4097 19.908 10.218C19.4802 10 18.9201 10 17.8 10H11V15.7273M7 12H7.01M8 12C8 12.5523 7.55228 13 7 13C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11C7.55228 11 8 11.4477 8 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <h2 class="text-yellow-600 font-borel">Fino a 6 posti letto</h2>
+                               </div>
+                        </div>
+    
                     </div>
 
-                    <div class="flex  flex-col p-10 justify-center items-center gap-2  ">
-                        <span  class=" font-quick">Galleria foto</span>
-            
-                    <div class="flex snap-mandatory w-96 p-10 gap-16 overflow-x-scroll rounded-2xl snap-x ">
+                    <div class="flex  flex-col md:p-10  justify-center items-center   ">
+
+                    </div>
+
+                    <div class="flex snap-mandatory w-full  gap-14 overflow-x-scroll rounded-2xl snap-x ">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/3.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/2.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/4.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/7.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/8.jpg" alt="">
                         <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/9.jpg" alt="">
-                        <img class="object-contain rounded-2xl max-h-96 snap-center" src="static/carosello/10.jpg" alt="">
                     </div>
-                    </div>
-                    </div>
-
                 </div>
-    
-                
-           
-            <div style="background-color: rgb(255, 255, 255);" class="items-center justify-center h-auto flex flex-col  gap-10 md:flex-row p-14 rounded-2xl">
-                <div class="">
-                    <h2 style="padding-bottom: 20px;" class="text-yellow-600 font-borel text-2xl">Noleggio Omaggio!</h2>
-                    <div style="width: 300px; padding-bottom: 20px;" class="font-quick">
-                        Solo fino al 30 aprile, con almeno tre pernottamenti, 
-                        per un giorno riceverai 
-                        in omaggio il noleggio di due 
-                        e-bike o di uno scooter
-                    </div>
-                    <div class="flex align-middle items-center gap-8">
-                        <a class="pt-10" href="#prenota"><button class="bg-yellow-300  rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
-                        <a href="#domande" class="font-quick mt-10 text-cyan-600">Dubbi?</a>
-                    </div>
-                    
-                </div>
-                <img class="w-44" src="static/bici.png">
-            </div>
-
-                
             </div>
         </div>
     </div>
 
-    <div>
-        <div class="h-96" id="map"></div>
+
+    <div style="background-color: rgb(255, 255, 255);" class="items-center justify-center h-auto flex flex-col  gap-10 md:flex-row p-14 rounded-2xl">
+        <div class="">
+            <h2 style="padding-bottom: 20px;" class="text-yellow-600 font-borel text-2xl">Noleggio Omaggio!</h2>
+            <div style="width: 300px; padding-bottom: 20px;" class="font-quick">
+                Solo fino al 30 aprile, con almeno tre pernottamenti, 
+                per un giorno riceverai 
+                in omaggio il noleggio di due 
+                e-bike o di uno scooter
+            </div>
+            <div class="flex align-middle items-center gap-8">
+                <a class="pt-10" href="#prenota"><button class="bg-yellow-300  rounded-full font-quick text-sky-700 p-3 px-6">Prenota ora</button></a>
+                <a href="#domande" class="font-quick mt-10 text-cyan-600">Dubbi?</a>
+            </div>
+            
+        </div>
+        <img class="w-44" src="static/bici.png">
     </div>
-    
+
+   
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlV_MK63B1SqT9g22FXi61kyMzdNgVVRY&libraries=places&callback=initMap&v=weekly&keyword=Grocery"
       defer
     ></script>
+   
+    <div>
+        <div class="h-96" id="map"></div>
+    </div>
 
     <section  style="background-image: url(static/pattern2.jpg);" class="relative gap-12flex justify-center items-center py-14  px-15">
 
-       <div class="flex  flex-col gap-5 justify-center align-middle items-center p-5">
-        <h2 id="prenota" class=" font-quick text-2xl text-sky-700 scroll-smooth">Prenotazioni</h2>
-
-        <div class="flex md:flex-row flex-col justify-center items-center">
-                <div class="flex flex-col justify-center items-center">
-                    <span class="w-80 font-borel p-10">Prenota il tuo soggiorno sulle seguenti piattaforme:</span>  
-                <div class="flex flex-col gap-5">
-                <div class="flex gap-10">
-                    <a href="https://www.booking.com/hotel/it/essegihome-porto-empedocle.it.html?aid=356980&label=gog235jc-1DCA0ocUIaZXNzZWdpaG9tZS1wb3J0by1lbXBlZG9jbGVIFFgDaHGIAQGYARS4ARjIAQ3YAQPoAQH4AQKIAgGoAgS4ArTBqa4GwAIB0gIkMzc2NDlkYzUtNzMyZi00NjY3LWI4YzQtNjk1ZDc2MWFkZjI12AIE4AIB&sid=07de9849448d59f14faa3d93655a9866&atlas_src=sr_iw_btn;dest_id=-125538;dest_type=city;dist=0;group_adults=2;group_children=0;no_rooms=1;room1=A%2CA;sb_price_type=total;type=total;ucfs=1&"><button class="p-4 rounded-full bg-sky-500 shadow-lg"><svg class="h-10" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="16" x2="176" y1="96" y2="96" gradientUnits="userSpaceOnUse"><stop offset="0"></stop></linearGradient></defs><path stroke="url(#a)" stroke-linejoin="round" stroke-width="12" d="M75.984 145.016H50.841V115.31c0-6.33 2.465-9.74 7.986-10.422h17.256a18.873 18.873 0 0 1 14.81 5.373 18.378 18.378 0 0 1 5.403 14.643c0 12.662-7.74 20.21-20.213 20.21zM50.791 64.71v-7.792c0-6.818 2.958-10.13 9.368-10.52h12.916c11.044 0 17.749 6.527 17.749 17.533 0 8.279-4.536 18.019-17.256 18.019H50.89Zm57.387 29.707-4.536-2.532 3.944-3.41c4.634-3.895 12.325-12.759 12.325-28.002C119.91 37.097 101.57 22 73.223 22h-35.99C28.79 22.286 22.075 29.093 22 37.438v132.464h51.864c31.552 0 51.865-16.947 51.865-43.246 0-14.122-6.557-26.297-17.65-32.385"></path><ellipse cx="151.94" cy="152.17" fill="#000000" stroke="#000000" stroke-linejoin="round" stroke-width="8" rx="11.805" ry="11.707"></ellipse></g></svg></button></a>
-                    <a href="airbnb.com/h/essegihome"><button class="p-4 rounded-full bg-rose-400 shadow-lg"><svg class="h-10" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#a)"> <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M96 22a22.527 22.527 0 0 0-20.335 12.87c-11.068 23.616-33.396 70.46-44.464 93.949a28.578 28.578 0 0 0-2.767 12.225c0 15.994 12.963 28.957 28.957 28.957 23.744 0 61.129-39.83 61.129-67.564 0-12.438-10.082-22.521-22.52-22.521-12.439 0-22.52 10.083-22.52 22.521 0 27.734 37.384 67.564 61.128 67.564 15.992 0 28.957-12.963 28.957-28.957a28.56 28.56 0 0 0-2.768-12.225c-11.066-23.488-33.332-70.333-44.398-93.82A22.525 22.525 0 0 0 95.999 22Z"></path> </g> <defs> <clipPath id="a"> <path fill="#ffffff" d="M0 0h192v192H0z"></path> </clipPath> </defs> </g></svg></button></a>
-                </div>
-               </div>
-                </div>
-               
-
-                <div class="flex flex-col justify-center items-center">
-                    <span class="w-80 font-borel w- p-10">Contattaci e saremo lieti di rispondere a qualsiasi tua domanda</span>  
-                <div class="flex  gap-10">
-                <a href="https://wa.me/3405819500" target="_blank"><button  class="p-4 rounded-full bg-yellow-300 shadow-lg"><svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#000000"></path> </g></svg></button></a>
-                <a href="tel:3283411322"><button class="p-4 rounded-full bg-yellow-300 shadow-lg"><svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5.5C21 14.0604 14.0604 21 5.5 21C5.11378 21 4.73086 20.9859 4.35172 20.9581C3.91662 20.9262 3.69906 20.9103 3.50103 20.7963C3.33701 20.7019 3.18146 20.5345 3.09925 20.364C3 20.1582 3 19.9181 3 19.438V16.6207C3 16.2169 3 16.015 3.06645 15.842C3.12515 15.6891 3.22049 15.553 3.3441 15.4456C3.48403 15.324 3.67376 15.255 4.05321 15.117L7.26005 13.9509C7.70153 13.7904 7.92227 13.7101 8.1317 13.7237C8.31637 13.7357 8.49408 13.7988 8.64506 13.9058C8.81628 14.0271 8.93713 14.2285 9.17882 14.6314L10 16C12.6499 14.7999 14.7981 12.6489 16 10L14.6314 9.17882C14.2285 8.93713 14.0271 8.81628 13.9058 8.64506C13.7988 8.49408 13.7357 8.31637 13.7237 8.1317C13.7101 7.92227 13.7904 7.70153 13.9509 7.26005L13.9509 7.26005L15.117 4.05321C15.255 3.67376 15.324 3.48403 15.4456 3.3441C15.553 3.22049 15.6891 3.12515 15.842 3.06645C16.015 3 16.2169 3 16.6207 3H19.438C19.9181 3 20.1582 3 20.364 3.09925C20.5345 3.18146 20.7019 3.33701 20.7963 3.50103C20.9103 3.69907 20.9262 3.91662 20.9581 4.35173C20.9859 4.73086 21 5.11378 21 5.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a>
-               </div>
-                </div>
-       </div>  
-    </section>
-
-   
-
-
-    <footer class=" flex flex-col bg-sky-950 h-auto justify-center items-center gap-20">
-       <div class="flex rounded-2xl gap-10 md:flex-row flex-col p-10">
-        <div class="">
-            <h1 class=" text-3xl font-PlayFair font-bold py-5 text-white">
-                Essegi-Home
-            </h1>
-                <span class="font-quick text-slate-200">via Crispi, 266 <br> Porto Empedocle (AG)</span><br>
-                <span class="font-quick text-slate-200"><br>La tua vacanza su due ruote <br> con essegirent <br> il noleggio auto e scooter di Essegi </span><a href="https://www.essegirent.com/" class="font-quick text-yellow-400 underline">vai al sito</a>
-            </div>   
-    
-            <div>
-                <img style="background-image: url();" class="h-52" src="static/clx.png">
-            </div>
-        </div>
-    </footer>
+        <div class="flex  flex-col gap-5 justify-center align-middle items-center p-5">
+         <h2 id="prenota" class=" font-quick text-2xl text-sky-700 scroll-smooth">Prenotazioni</h2>
  
+         <div class="flex md:flex-row flex-col justify-center items-center">
+                 <div class="flex flex-col justify-center items-center">
+                     <span class="w-80 font-borel p-10">Prenota il tuo soggiorno sulle seguenti piattaforme:</span>  
+                 <div class="flex flex-col gap-5">
+                 <div class="flex gap-10">
+                     <a href="https://www.booking.com/hotel/it/essegihome-porto-empedocle.it.html?aid=356980&label=gog235jc-1DCA0ocUIaZXNzZWdpaG9tZS1wb3J0by1lbXBlZG9jbGVIFFgDaHGIAQGYARS4ARjIAQ3YAQPoAQH4AQKIAgGoAgS4ArTBqa4GwAIB0gIkMzc2NDlkYzUtNzMyZi00NjY3LWI4YzQtNjk1ZDc2MWFkZjI12AIE4AIB&sid=07de9849448d59f14faa3d93655a9866&atlas_src=sr_iw_btn;dest_id=-125538;dest_type=city;dist=0;group_adults=2;group_children=0;no_rooms=1;room1=A%2CA;sb_price_type=total;type=total;ucfs=1&"><button class="p-4 rounded-full bg-sky-500 shadow-lg"><svg class="h-10" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="16" x2="176" y1="96" y2="96" gradientUnits="userSpaceOnUse"><stop offset="0"></stop></linearGradient></defs><path stroke="url(#a)" stroke-linejoin="round" stroke-width="12" d="M75.984 145.016H50.841V115.31c0-6.33 2.465-9.74 7.986-10.422h17.256a18.873 18.873 0 0 1 14.81 5.373 18.378 18.378 0 0 1 5.403 14.643c0 12.662-7.74 20.21-20.213 20.21zM50.791 64.71v-7.792c0-6.818 2.958-10.13 9.368-10.52h12.916c11.044 0 17.749 6.527 17.749 17.533 0 8.279-4.536 18.019-17.256 18.019H50.89Zm57.387 29.707-4.536-2.532 3.944-3.41c4.634-3.895 12.325-12.759 12.325-28.002C119.91 37.097 101.57 22 73.223 22h-35.99C28.79 22.286 22.075 29.093 22 37.438v132.464h51.864c31.552 0 51.865-16.947 51.865-43.246 0-14.122-6.557-26.297-17.65-32.385"></path><ellipse cx="151.94" cy="152.17" fill="#000000" stroke="#000000" stroke-linejoin="round" stroke-width="8" rx="11.805" ry="11.707"></ellipse></g></svg></button></a>
+                     <a href="airbnb.com/h/essegihome"><button class="p-4 rounded-full bg-rose-400 shadow-lg"><svg class="h-10" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#a)"> <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M96 22a22.527 22.527 0 0 0-20.335 12.87c-11.068 23.616-33.396 70.46-44.464 93.949a28.578 28.578 0 0 0-2.767 12.225c0 15.994 12.963 28.957 28.957 28.957 23.744 0 61.129-39.83 61.129-67.564 0-12.438-10.082-22.521-22.52-22.521-12.439 0-22.52 10.083-22.52 22.521 0 27.734 37.384 67.564 61.128 67.564 15.992 0 28.957-12.963 28.957-28.957a28.56 28.56 0 0 0-2.768-12.225c-11.066-23.488-33.332-70.333-44.398-93.82A22.525 22.525 0 0 0 95.999 22Z"></path> </g> <defs> <clipPath id="a"> <path fill="#ffffff" d="M0 0h192v192H0z"></path> </clipPath> </defs> </g></svg></button></a>
+                 </div>
+                </div>
+                 </div>
+                
+ 
+                 <div class="flex flex-col justify-center items-center">
+                     <span class="w-80 font-borel w- p-10">Contattaci e saremo lieti di rispondere a qualsiasi tua domanda</span>  
+                 <div class="flex  gap-10">
+                 <a href="https://wa.me/3405819500" target="_blank"><button  class="p-4 rounded-full bg-yellow-300 shadow-lg"><svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#000000"></path> </g></svg></button></a>
+                 <a href="tel:3283411322"><button class="p-4 rounded-full bg-yellow-300 shadow-lg"><svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5.5C21 14.0604 14.0604 21 5.5 21C5.11378 21 4.73086 20.9859 4.35172 20.9581C3.91662 20.9262 3.69906 20.9103 3.50103 20.7963C3.33701 20.7019 3.18146 20.5345 3.09925 20.364C3 20.1582 3 19.9181 3 19.438V16.6207C3 16.2169 3 16.015 3.06645 15.842C3.12515 15.6891 3.22049 15.553 3.3441 15.4456C3.48403 15.324 3.67376 15.255 4.05321 15.117L7.26005 13.9509C7.70153 13.7904 7.92227 13.7101 8.1317 13.7237C8.31637 13.7357 8.49408 13.7988 8.64506 13.9058C8.81628 14.0271 8.93713 14.2285 9.17882 14.6314L10 16C12.6499 14.7999 14.7981 12.6489 16 10L14.6314 9.17882C14.2285 8.93713 14.0271 8.81628 13.9058 8.64506C13.7988 8.49408 13.7357 8.31637 13.7237 8.1317C13.7101 7.92227 13.7904 7.70153 13.9509 7.26005L13.9509 7.26005L15.117 4.05321C15.255 3.67376 15.324 3.48403 15.4456 3.3441C15.553 3.22049 15.6891 3.12515 15.842 3.06645C16.015 3 16.2169 3 16.6207 3H19.438C19.9181 3 20.1582 3 20.364 3.09925C20.5345 3.18146 20.7019 3.33701 20.7963 3.50103C20.9103 3.69907 20.9262 3.91662 20.9581 4.35173C20.9859 4.73086 21 5.11378 21 5.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a>
+                </div>
+                 </div>
+        </div>  
+     </section>
+   
+     <footer class=" flex flex-col bg-sky-950 h-auto justify-center items-center gap-20">
+        <div class="flex rounded-2xl gap-10 md:flex-row flex-col p-10">
+         <div class="">
+             <h1 class=" text-3xl font-PlayFair font-bold py-5 text-white">
+                 Essegi-Home
+             </h1>
+                 <span class="font-quick text-slate-200">via Crispi, 266 <br> Porto Empedocle (AG)</span><br>
+                 <span class="font-quick text-slate-200"><br>La tua vacanza su due ruote <br> con essegirent <br> il noleggio auto e scooter di Essegi </span><a href="https://www.essegirent.com/" class="font-quick text-yellow-400 underline">vai al sito</a>
+             </div>   
+     
+             <div>
+                 <img style="background-image: url();" class="h-52" src="static/clx.png">
+             </div>
+         </div>
+     </footer>
    
 </body>
 

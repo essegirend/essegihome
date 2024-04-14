@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .relative {
@@ -567,6 +577,14 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.-mt-24 {
+  margin-top: -6rem;
+}
+
+.-mt-52 {
+  margin-top: -13rem;
 }
 
 .flex {
@@ -597,6 +615,18 @@ video {
   height: auto;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -611,6 +641,18 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .transform {
@@ -679,6 +721,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .overflow-x-scroll {
@@ -752,6 +798,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -775,6 +825,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pt-10 {
@@ -871,6 +926,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-52 {
+    margin-top: 13rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -885,5 +948,13 @@ video {
 
   .md\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 }
